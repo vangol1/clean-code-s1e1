@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -10,7 +10,7 @@ body {
   display: block;
   text-align: right;
 }
-.eisenhower-matrix img {
+.eisenhower-matrix .img {
   width: 100%;
 }
 .eisenhower-matrix .eisenhower-matrix__info {
@@ -44,7 +44,7 @@ li, h3 {
 input,button{
   outline:none;
 }
-button {
+.btn {
   background: none;
   border: 0px;
   color: #888;
@@ -53,12 +53,12 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.btn:hover {
   color: #3a3A3a;
 }
 /* Heading */
-h3,
-label[for="add-item__input"] {
+.h3,
+.input-label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -67,7 +67,7 @@ label[for="add-item__input"] {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+.input_text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -79,21 +79,21 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.input_text:focus {
   color: #333;
 }
 
 /* New Task */
-label[for="add-item__input"] {
+.input-label {
   display: block;
   margin: 0 0 20px;
 }
-input#add-item__input {
+#add-item__input {
   width: 318px;
 }
 
 /* Task list */
-li {
+.list {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -101,33 +101,33 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+.list > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.list > input[type="checkbox"] {
   margin: 0 10px;
 }
-li > label {
+.list > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li >    input[type="text"] {
+.list >    input[type="text"] {
   width: 226px
 }
-button.delete-btn img {
+.delete-btn .img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete-btn img:hover {
+.delete-btn .img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+#completed-tasks label {
   text-decoration: line-through
   color: #888;
 }
@@ -137,7 +137,7 @@ ul li input[type=text] {
   display:none
 }
 
-ul li.edit-mode input[type=text] {
+.edit-mode .input_text {
   display:inline-block;
   width:224px
 }
